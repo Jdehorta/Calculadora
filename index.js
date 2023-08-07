@@ -8,5 +8,11 @@ const pResultado = document.getElementById("resultado");
 
 btnCalcular.addEventListener('click', calcular);
 function calcular(){
-    console.log("apretaste bien")
+    console.log(txtOperador.value)
+    const operador = txtOperador.value
+    if(operador == "+" || operador == "-" || operador == "*" || operador == "/"){
+        console.log("Calculo posible")
+    }else{
+        console.log("Calculo imposible")
+    }
 }
